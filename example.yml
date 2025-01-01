@@ -1,0 +1,160 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/cv.typ/main/cv.typ.schema.json
+
+personal:
+  name: John Smith L. Doe
+  email: johndoe@example.com
+  phone: (+1) 987 6543 210
+  site: https://johndoe.com
+  github: https://github.com/johndoe
+  linkedin: https://linkedin.com/in/johndoe
+
+# name: the name of the company or name
+experience:
+  - name: X Company
+    position: Senior Developer
+    url: https://example.com
+    location: Remote / New York, New York
+    startDate: 2021-08-01
+    endDate: "present"
+    hours: 40
+    highlights:
+      - This being the theory I hold, why need I be afraid of not being able to reconcile it with the case of my ancestors?
+      - "The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+      - Do you really believe that they charged an armed enemy, or treated their children, their own flesh and blood, so cruelly, without a thought for their own interest or advantage?
+  - name: National Aeronautics and Space Administration - Jet Propulsion Laboratory
+    position: Senior Developer
+    url: https://example.com
+    location: Pasadena, California
+    startDate: 2021-08-01
+    endDate: 2023-05-31
+    highlights:
+      - This being the theory I hold, why need I be afraid of not being able to reconcile it with the case of my ancestors?
+      - "The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+      - Do you really believe that they charged an armed enemy, or treated their children, their own flesh and blood, so cruelly, without a thought for their own interest or advantage?
+# name: the name of the name
+education:
+  - name: Open University
+    url: https://example.com/
+    major: Computer Science
+    minor: Mathematics
+    degree: Bachelor of Science
+    endDate: 2021-06-30
+    location: City of London, United Kingdom
+    courses:
+      - Algorithms & Data Structures
+      - Applications in Quantitative Finance
+      - Engineering Data Analysis
+      - Compiler Architecture
+  - name: Harvard University
+    url:
+    major: Computer Science
+    degree: Bachelor of Science
+
+    endDate: 2021-06-30
+    location: City of London, United Kingdom
+    # courses:
+    #   - Algorithms & Data Structures
+    #   - Applications in Quantitative Finance
+    #   - Engineering Data Analysis
+    #   - Compiler Architecture
+    highlights:
+      - "*Thesis*: A convolutional neural network for predicting Greenland glacier melt and glacial water flow"
+      - "*Activities*: Debating, Chess, Cricket"
+
+certificates:
+  - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
+    date: 2021-09-01
+    issuer: Coursera
+    url: https://example.com
+
+publications:
+  - name: A convolutional neural network for predicting Greenland glacier melt and glacial water flow
+    publisher: Theoretical and Computational Fluid Dynamics
+    releaseDate: 2020-09-30
+    url: https://example.com
+
+projects:
+  - name: "Job Tailor"
+    url: https://example.com/
+    affiliation: Open University
+    startDate: 2020-11-01
+    endDate: 2021-04-30
+    skills:
+      - Python
+      - React
+      - Flask
+      - PostgreSQL
+    highlights:
+      - Created an AI-powered resume editor application that allowed users to easily create different resumes and cover letters specifically tailored to and customized for individual job descriptions based on their personal information in their complete curriculum vitae.
+      - Acquired more than 100,000 user sign ups in 3 months and more than 10,000 active monthly users in its lifetime before being sold to investors.
+      - Generated profit of upwards \$20,000 yearly with a team of only four developers and three business operatives
+
+skills:
+  - category: Soft Skills
+    skills:
+      - Public Speaking
+      - Debating
+      - Communication
+      - Critical Thinking
+      - Leadership
+      - Persuasive Writing
+      - Technical Writing
+  - category: Programming
+    skills:
+      - Python
+      - SQL, PostgreSQL
+      - MATLAB/Octave
+      - HTML
+      - CSS
+      - Javascript
+      - Typst
+      - LaTeX
+  - category: Tools
+    skills:
+      - Microsoft Word
+      - Git
+      - Docker
+      - Visual Studio Code
+      - Canva
+  - category: Web Development
+    skills:
+      - React
+      - Next.js
+      - million.js
+      - Svelte & Sveltekit
+      - Tailwind CSS
+      - Node.js
+      - Deno
+      - FastAPI
+      - Flask
+  - category: BI & Data Analytics
+    skills:
+      - Microsoft Excel
+      - Microsoft Power BI
+      - Jupyter Notebook
+      - Numpy
+      - Pandas
+      - Plotly
+      - Altair
+
+languages:
+  - language: English
+    fluency: Native speaker
+  - language: German
+    fluency: Native speaker
+  - language: Japanese
+    fluency: Basic proficiency
+
+interests:
+  - Video Games
+  - Anime
+  - Reading Non-fiction
+  - Classical and Original Soundtrack Music
+
+references:
+  # You can comment out the entries below if you don't have any references
+  # The same goes for the publications
+
+  - name: Dr. Jane Austin
+    reference: John was a great student. He was always eager to learn new things and was very passionate about his studies. As his mentor, I am proud to say that he was also a great leader and was able to lead his team to victory in the 2020 SCG Bangkok Business Challenge Global Competition.
+    url: https://janeaustin.com

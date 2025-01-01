@@ -1,0 +1,3 @@
+*.yml
+*.pdf
+!example.yml
