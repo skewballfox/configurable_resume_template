@@ -4,7 +4,7 @@
 #let docsettings = (
   headingfont: "Calibri",
   bodyfont: "Calibri",
-  fontsize: 10pt,
+  fontsize: 11pt,
   linespacing: 6pt,
 )
   
@@ -16,7 +16,7 @@
   //whether to include coursework, if applicable
   show_courses: true,
   //source(s) of resume data
-  sources: ( "general_data.yml", ),
+  sources: ( "example.yml", ),
 )
 
 #let customrules(doc) = {
