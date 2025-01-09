@@ -1,3 +1,5 @@
 *.yml
 *.pdf
-!example.yml
+*.png
+!example*.yml
+

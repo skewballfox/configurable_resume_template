@@ -10,13 +10,15 @@
   
 #let config = (
   //if true, will replace contact info with placeholders
-  anonymize: false,
+  anonymize: true,
   //generally government sites want things like hours per week
   gov: false,
   //whether to include coursework, if applicable
   show_courses: true,
   //source(s) of resume data
-  sources: ( "example.yml", ),
+  sources: ( "example_data.yml", ),
+  //an optional map of names of universities, companies, etc. to replace with placeholders
+  anon_map_source: "example_anon_map.yml",
 )
 
 #let customrules(doc) = {

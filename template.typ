@@ -53,8 +53,53 @@
   for k in d.keys() {
     if k in anon_data { d.insert(k,anon_data.at(k)) }
   }
+  
+  
   d
 
+}
+
+#let anonymize_education(education, name_map: (:)) ={
+  
+  let university_count = 1
+  let new_education = ()
+  for edu in education {
+    if edu.name not in name_map {
+      name_map.insert(edu.name, "University " + str(university_count))
+      university_count = university_count + 1
+    }
+    edu.name =  name_map.at(edu.name)
+    new_education.push(edu)
+  }
+  new_education
+}
+
+#let anonymize_experience(experience, name_map: (:)) = {
+  let job_count = 1
+  let new_experience = ()
+  for exp in experience {
+    if exp.name not in name_map {
+      name_map.insert(edu.name, "Company " + str(job_count))
+      job_count = job_count + 1
+    }
+    exp.name =  name_map.at(exp.name)
+    new_experience.push(exp)
+  }
+  new_experience
+}
+
+#let anonymize_projects(projects, name_map: (:)) = {
+  let project_count = 1
+  let new_projects = ()
+  for proj in projects {
+    if proj.name not in name_map {
+      name_map.insert(proj.name, "Project " + str(project_count))
+      project_count = project_count + 1
+    }
+    proj.name =  name_map.at(proj.name)
+    new_projects.push(proj)
+  }
+  new_projects
 }
 
 
@@ -270,7 +315,19 @@
   }
   if config.anonymize {
     data.personal = anonymize(data.personal)
+    if "anon_map_source" in config {
+      let anon_map = yaml(config.anon_map_source)
+      
+      data.education = anonymize_education(data.education, name_map: anon_map.education)
+      data.experience = anonymize_experience(data.experience, name_map: anon_map.experience)
+      data.projects = anonymize_projects(data.projects, name_map: anon_map.projects)
+    } else {
+      data.education = anonymize_education(data.education)
+      data.experience = anonymize_experience(data.experience)
+    } 
+    
   }
+
   
   if not config.show_courses {
     data.education = data.education.map(edu => {

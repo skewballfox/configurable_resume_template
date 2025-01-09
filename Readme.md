@@ -6,13 +6,12 @@ Based off Jake's resume template. Modified from [NNJR](https://github.com/tzx/NN
 
 ### So far
 
-- anonymize: whether to replace contact info with placeholders
+- anonymize: whether to replace contact info, universities, companies, and projects with placeholders
 - show_course: whether to show courses for degrees earned
 - gov: display fields generally only desired for applying to government jobs, such as hours per week
 
 ### Planned
 
-- anonymize: Optionally Replace University and company names with placeholders.
 - headerless: remove header entirely for anonymization (for Dice)
 - courses: Instead of showing all courses, list an amount (to keep page lenght to 1).
 - gpa: whether to show GPA
